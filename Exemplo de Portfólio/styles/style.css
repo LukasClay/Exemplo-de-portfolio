@@ -1,0 +1,176 @@
+  @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Prompt:wght@400;600&display=swap');
+:root{
+
+    --cor-primaria-: #000000;
+    --cor-securandaria-: #f6f6f6;
+    --cor-terciaria-:#22d4fd;
+    --cor-quatenaria-:#0b6a80;
+    --box-shadow-primaria-:#22d4fd;
+    --box-shadow-secundaria:#000000;
+    --box-shadow-terciaria:rgba(34, 213, 253, 0.5);
+    --box-shadow-quartenaria:#0b6a80;
+    --fonte-kronaOne-: 'Krona One', sans-serif;
+    --fonte-prompt-: 'Prompt', sans-serif;
+}
+
+
+
+  body {
+      width: 100%;
+      height: 100%;
+      box-sizing:border-box;    
+      background: var(--cor-primaria-);
+      color: rgb(255,255 ,255, 0.8);
+  }
+
+  .cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho-m{
+    display: flex;
+    gap: 5rem;
+}
+
+  .cabecalho-m-l{
+    font-family: var(--fonte-prompt-);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--cor-terciaria-);
+    text-decoration: none;
+  }
+
+  .cabecalho-m-l:hover{
+    text-shadow: -1.3px -1.3px 23px var(--cor-quatenaria-);
+  }
+
+  .apresentacao-conteudo-titulo a{
+    color: var(--cor-securandaria-);
+  }
+
+  .titulo-destaque {
+      color: var(--cor-terciaria-);
+  }
+
+  .apresentacao {
+      padding: 4% 15%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .apresentacao-conteudo {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+  }
+
+
+  .texto {
+      font-size: 1.5rem;
+      font-family: var(--fonte-prompt-);
+
+  }
+
+  
+  .fotenha {
+    width: 30%;
+    margin-right: 10%;
+    transition: 1.5s;
+    border: 3px;
+    border-radius: 20% 6% 20% 6%;
+    border: lightseagreen 3px solid;
+    box-shadow: 10px 10px 30px 5px var(--box-shadow-quartenaria), -10px -10px 30px 5px var(--box-shadow-quartenaria), 15px 15px 50px 10px var(--box-shadow-secundaria), -15px -15px 50px 10px var(--box-shadow-secundaria);
+}
+
+.fotenha:hover{
+        border: 3px;
+        border-radius: 10% 30% 10% 30%;
+        border: lightseagreen 3px solid;
+        box-shadow: 10px 10px 30px 5px var(--box-shadow-quartenaria), -10px -10px 30px 5px var(--box-shadow-quartenaria), 15px 15px 50px 10px var(--box-shadow-terciaria), -15px -15px 50px 10px var(--box-shadow-terciaria)
+    }
+
+
+.apresentacao-conteudo-titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-kronaOne-);
+
+}
+
+  .apresentacao-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2.25rem;
+
+  }
+
+  .links-navegacao {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      width: 50%;
+      text-align: center;
+      border: var(--cor-terciaria-) 3px solid;
+      border-radius: 17px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 18px 0;
+      text-decoration: none;
+      color: var(--cor-securandaria-);
+      transition: 1.5s border-radius;
+      font-family: var(--fonte-prompt-);
+      box-shadow: 1px 1px 5px 1px var(--box-shadow-primaria-), -1px -1px 5px 1px var(--box-shadow-primaria-), 2px 2px 8px 1px #888888, -2px -2px 8px 1px #888888;
+  }
+
+    .links-navegacao:hover {
+      background-color: #101010;
+      border: var(--cor-primaria-) 2px solid;
+      border-radius: 38px 70%;
+      box-shadow: 1px 1px 5px 1px var(--box-shadow-primaria-), -1px -1px 5px 1px var(--box-shadow-primaria-), 
+      2px 2px 8px 1px var(--box-shadow-primaria-), -2px -2px 8px 1px var(--box-shadow-primaria-);
+  }
+
+
+
+  .redes {
+      font-family: var(--fonte-kronaOne-);
+      font-weight: 400;
+      font-size: 1.5rem;
+  }
+  .rodape{
+    color: var(--cor-primaria-);
+    background-color: var(--cor-quatenaria-);
+    padding: 58px;
+    text-align: center;
+    font-family: var(--fonte-prompt-);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media (max-width:600px){
+    .cabecalho{
+     padding: 10%;   
+    }
+
+    .cabecalho-m{
+        justify-content:center ;
+    }
+    .fotenha{
+        width: 50%;
+        margin: 0 0 6% 1%;
+    }
+    
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    
+    .apresentacao-conteudo{
+        width: auto;
+    }
+   
+}
+  
